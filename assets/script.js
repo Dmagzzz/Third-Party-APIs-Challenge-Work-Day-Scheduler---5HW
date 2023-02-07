@@ -23,35 +23,35 @@ $(document).ready(function () {
 
             //checks the time and adds the classes for the background indicators
             if (blockTime < timeNow) {
-                document.getElementById(this).addClass("past");
-                document.getElementById(this).removeClass("future");
-                document.getElementById(this).removeClass("present");
+                $(this).addClass("past");
+                $(this).removeClass("future");
+                $(this).removeClass("present");
             }
             else if (blockTime === timeNow) {
-                document.getElementById(this).addClass("present");
-                document.getElementById(this).removeClass("past");
-                document.getElementById(this).removeClass("future");
+                $(this).addClass("present");
+                $(this).removeClass("past");
+                $(this).removeClass("future");
             }
             else {
-                document.getElementById(this).removeClass("present");
-                document.getElementById(this).removeClass("past");
-                document.getElementById(this).addClass("future");
+                $(this).removeClass("present");
+                $(this).removeClass("past");
+                $(this).addClass("future");
 
             }
         })
     }
-
     // Gets items from local storage
-    document.getElementById("#hour8 .description").val(localStorage.getItem("hour8"));
-    document.getElementById("#hour9 .description").val(localStorage.getItem("hour9"));
-    document.getElementById("#hour10 .description").val(localStorage.getItem("hour10"));
-    document.getElementById("#hour11 .description").val(localStorage.getItem("hour11"));
-    document.getElementById("#hour12 .description").val(localStorage.getItem("hour12"));
-    document.getElementById("#hour13 .description").val(localStorage.getItem("hour13"));
-    document.getElementById("#hour14 .description").val(localStorage.getItem("hour14"));
-    document.getElementById("#hour15 .description").val(localStorage.getItem("hour15"));
-    document.getElementById("#hour16 .description").val(localStorage.getItem("hour16"));
-    document.getElementById("#hour17 .description").val(localStorage.getItem("hour17"));
+
+$("#hour8").children(".description").val(localStorage.getItem("hour8"));
+$("#hour9").children(".description").val(localStorage.getItem("hour9"));
+$("#hour10").children(".description").val(localStorage.getItem("hour10"));
+$("#hour11").children(".description").val(localStorage.getItem("hour11"));
+$("#hour12").children(".description").val(localStorage.getItem("hour12"));
+$("#hour13").children(".description").val(localStorage.getItem("hour13"));
+$("#hour14").children(".description").val(localStorage.getItem("hour14"));
+$("#hour15").children(".description").val(localStorage.getItem("hour15"));
+$("#hour16").children(".description").val(localStorage.getItem("hour16"));
+$("#hour17").children(".description").val(localStorage.getItem("hour17"));
 
     timeTracker();
 })
