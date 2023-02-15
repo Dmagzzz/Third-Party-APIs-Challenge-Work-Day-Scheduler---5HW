@@ -29,6 +29,9 @@ THEN the saved events persist
 
 * Download or clone repository
 
+## Deployed link
+* https://dmagzzz.github.io/Third-Party-APIs-Challenge-Work-Day-Scheduler---5HW/
+
 ## Screenshots
 <img width="958" alt="1" src="https://user-images.githubusercontent.com/113950240/217384623-1e3db23b-f0d7-4bde-9dca-3ee6ed745667.PNG">
 
